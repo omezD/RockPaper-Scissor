@@ -1,0 +1,14 @@
+.cardBox {
+  border: 2px solid white;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px;
+  height: 500px;
+  width: 600px;
+  background-color: rgb(137, 50, 6);
+  border-radius: 10%;
+}
+.button {
+  margin-right: 10px;
+  border:2px solid pink;
+}
