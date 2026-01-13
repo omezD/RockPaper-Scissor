@@ -19,8 +19,9 @@ export default function RPS() {
     ) {
       return "You Win 🎉";
     }
-
-    return "You Lose 😢";
+    else{
+        return "You Lose 😢";
+    }
   }
 
   let getComputerMove = (item) => {
