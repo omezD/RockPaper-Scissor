@@ -13,8 +13,8 @@ export default function RPS() {
     }
 
     if (
-      (user === "Rock" && computer === "Scissors") ||
-      (user === "Scissors" && computer === "Paper") ||
+      (user === "Rock" && computer === "Scissor") ||
+      (user === "Scissor" && computer === "Paper") ||
       (user === "Paper" && computer === "Rock")
     ) {
       return "You Win 🎉";
