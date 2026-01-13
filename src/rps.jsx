@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getMoves } from "./helper.js";
+import { getMoves,getResult} from "./helper.js";
 import Card from "./Card.jsx";
 import "./rps.css";
 
@@ -7,22 +7,7 @@ export default function RPS() {
   let [choice, setChoice] = useState("");
   let moves = ["Rock", "Paper", "Scissor"];
   let [computerChoice, setComputerChoice] = useState("Didn't play yet");
-  function getResult(user, computer) {
-    if (user === computer) {
-      return "Draw 🤝";
-    }
-
-    if (
-      (user === "Rock" && computer === "Scissor") ||
-      (user === "Scissor" && computer === "Paper") ||
-      (user === "Paper" && computer === "Rock")
-    ) {
-      return "You Win 🎉";
-    }
-    else{
-        return "You Lose 😢";
-    }
-  }
+  
 
   let getComputerMove = (item) => {
     let computerMove = getMoves();
